@@ -8,11 +8,11 @@
                 </form>
          <ul class="navbar-nav">
              <li  class="nav-item"><a href="index.php" class="nav-link text-warning"><b>Home</b></a></li>
-             <li  class="nav-item"><a href="index.php" class="nav-link text-light">About</a></li>
+             <li  class="nav-item"><a href="about.php" class="nav-link text-light">About</a></li>
 
              <?php if(isset($_SESSION['user'])){ ?>
                 <li  class="nav-item"><a href=" logout.php" class="nav-link text-light">Logout</a></li>
-                <li  class="nav-item"><a href="auth/login.php" class="nav-link text-danger"><b>
+                <li  class="nav-item"><a href="login.php" class="nav-link text-info"><b>
                         <?php 
                                 $log = $_SESSION['user'];
                                 $data = callingData("users where email='$log' OR contact='$log'");
@@ -20,7 +20,7 @@
                                         
                         ?>
                 </b></a></li>
-                <li  class="nav-item"><a href="insert.php" class="nav-link text-light">insert</a></li>
+                <li  class="nav-item"><a href="insert.php" class="nav-link text-light">Insert</a></li>
 
 
              <?php } else { ?>
@@ -32,7 +32,7 @@
              <li  class="nav-item"> <a href='cart.php' class="btn btn-info btn-sm mt-2 position-relative">
                 <i class="bi bi-cart"></i> <b>Cart</b>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        2
+                        7
                         </span>
                                 </a>
              </li>

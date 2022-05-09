@@ -53,7 +53,7 @@
                             ];
 
                             insertData("users",$data);
-                            redirect("../index.php");
+                            redirect("index.php");
                         }
                         ?>
                     </div>
