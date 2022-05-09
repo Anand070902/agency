@@ -29,11 +29,6 @@ function insertData($table,$array){
        }
        return $array;
    }
-
-   function callingOne($table){
-        $data = callingData($table);
-        return $data[0];
-   }
    
    function delete($table,$delete){
        global $connect;
